@@ -1,0 +1,9 @@
+fetch('https://api.exchangeratesapi.io/latest?base=EUR')  // not function name is needed, directly type into the JS
+  .then(res => res.json())
+  .then(data => obj3 = data)
+  
+
+function function2(){
+ 
+  document.getElementById("FirstTable").rows[1].cells[1].innerHTML = obj1.rates.EUR;  // changing the table
+}
